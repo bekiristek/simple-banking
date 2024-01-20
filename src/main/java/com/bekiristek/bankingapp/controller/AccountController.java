@@ -32,7 +32,7 @@ public class AccountController {
     }
 
     @GetMapping("/{accountNumber}")
-    public CreateAccountResponseDto getByAccountNumber(@PathVariable String accountNumber){
+    public CreateAccountResponseDto getByAccountNumber(@PathVariable("accountNumber") String accountNumber){
         return accountService.getByAccountNumber(accountNumber);
     }
 

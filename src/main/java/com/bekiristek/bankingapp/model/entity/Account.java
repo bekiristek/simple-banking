@@ -7,12 +7,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -28,8 +26,6 @@ public class Account extends BaseEntity {
     private String accountNumber;
     private double balance;
     private String owner;
-
     @OneToMany(mappedBy = "account")
-    @Builder.Default
-    private List<Transaction> transactions = new ArrayList<>();
+    private List<Transaction> transactions;
 }

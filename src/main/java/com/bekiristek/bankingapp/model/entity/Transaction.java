@@ -2,6 +2,7 @@ package com.bekiristek.bankingapp.model.entity;
 
 import com.bekiristek.bankingapp.model.base.BaseEntity;
 import com.bekiristek.bankingapp.model.enums.TransactionType;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -40,6 +41,7 @@ public abstract class Transaction extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private TransactionType transactionType;
 
+    @JsonBackReference
     @ManyToOne(fetch = FetchType.LAZY)
     private Account account;
 
