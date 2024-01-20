@@ -71,7 +71,7 @@ Postman tarafında bulunan istek örnekleri: [Postman Collection](https://github
 
 ## Projede Kullanılan Teknolojiler
 
-- Java 11
+- Java 17
 - Spring Boot 3.2.2
 - Maven
 - Lombok
