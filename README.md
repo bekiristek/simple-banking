@@ -1,7 +1,13 @@
 
 # Bankacılık Uygulaması
 
-Kullanıcı banka hesabı oluşturabilir, para yatırabilir ve çekebilir. Hesap numarası kullanarak telefon faturasını ödeyebilir. Bu örneklerin api detayları aşağıda verilmiştir. Postman tarafında bulunan servisler [Postman Collection](https://github.com/bekiristek/simple-banking/blob/main/collection/bank-app-api.postman_collection.json) içerisinden incelenebilir.
+Kullanıcı banka hesabı oluşturabilir, para yatırabilir ve çekebilir. Hesap numarası kullanarak telefon faturasını ödeyebilir. Bu örneklerin api detayları aşağıda verilmiştir. Postman tarafında bulunan servisler [Postman Collection](https://github.com/bekiristek/simple-banking/blob/main/collection/bank-app-api.postman_collection.json) içerisinden incelenebilir.<br><br>
+
+<p align="center">
+    <img src ="screenshots/model.png">
+</p>
+
+<br>
 
 ## Projenin Çalıştırılması
 
@@ -11,6 +17,7 @@ Kullanıcı banka hesabı oluşturabilir, para yatırabilir ve çekebilir. Hesap
 - Projenin .jar dosyasını /target klasörünün altında oluşturmak için --> "mvn clean install"
 - Projenin endpointlerine <b> API Kullanımı </b>  bölümünden detaylarına ulaşabilirsiniz.
 
+<br>
 
 ## API Kullanımı
 
