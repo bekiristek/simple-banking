@@ -98,7 +98,8 @@ public class AccountServiceImpl implements AccountService {
         String accountNumber;
         do {
             String randomNumber = generateAccountNumber();
-            accountNumber = randomNumber.substring(0, 3) + "-" + randomNumber.substring(3, 6) + "-" + randomNumber.substring(6);
+            accountNumber = randomNumber.substring(0, 3) + "-" + randomNumber.substring(3, 6) + "-" +
+                    randomNumber.substring(6);
         } while (isUniqueAccountNumber(accountNumber));
         return accountNumber;
     }
