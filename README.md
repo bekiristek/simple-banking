@@ -8,6 +8,7 @@ Kullanıcı banka hesabı oluşturabilir, para yatırabilir ve çekebilir. Hesap
 - Projenin bulunduğu dizine gidilir --> "cd /bekiristek/simple-banking"
 - Projenin ihtiyaç duyduğu veritabanı için  [docker-compose.yml](https://github.com/bekiristek/simple-banking/blob/main/docker-compose.yml) dosyası çalıştırılır --> "docker-compose up -d"
 - Java projesi ayağa kaldırılır --> "http://localhost:9000/"
+- Projenin .jar dosyasını /target klasörünün altında oluşturmak için --> "mvn clean install"
 - Projenin endpointlerine <b> API Kullanımı </b>  bölümünden detaylarına ulaşabilirsiniz.
 
 
@@ -63,6 +64,13 @@ Kullanıcı banka hesabı oluşturabilir, para yatırabilir ve çekebilir. Hesap
 ```http
   jdbc:postgresql://localhost:5432/bankApp
 ```
+<p align="center">
+    <img src ="screenshots/docker-db.png">
+</p>
+
+<p align="center">
+    <img src ="screenshots/pg-admin.png">
+</p>
 
 <p align="center">
     <img src ="screenshots/account-db.png">
